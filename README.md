@@ -5,7 +5,7 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
 
 > [!IMPORTANT]  
-> This project relies on environment variables to be configured. Please map the values for `EXTERNAL_CONTACT_API_ENDPOINT` and `EXTERNAL_CONTACT_API_TOKEN` accordingly.
+> This project relies on setting up environment variables. Please map the values for `EXTERNAL_CONTACT_API_ENDPOINT` and `EXTERNAL_CONTACT_API_TOKEN` accordingly.
 
 ## Running the application in dev mode
 
