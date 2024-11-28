@@ -3,7 +3,6 @@ package me.zearthur.endpoints;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import me.zearthur.model.Contact;
-import me.zearthur.model.ContactExternalApi;
 import me.zearthur.service.ContactService;
 
 import java.util.List;

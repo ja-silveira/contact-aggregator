@@ -27,7 +27,8 @@ public class ContactService {
 
         while (contactsFound.size() < totalItems || totalItems == -1) {
             Response externalApiResponse = externalContactApiService.getPage(currentPage, 20);
-            contactsFound.addAll(externalApiResponse.readEntity(new GenericType<List<ContactExternalApi>>() {}));
+            List<ContactExternalApi> contactsInResponse = externalApiResponse.readEntity(new GenericType<>() {});
+            contactsFound.addAll(contactsInResponse);
             totalItems = Integer.parseInt(String.valueOf(externalApiResponse.getHeaders().get("total-count").get(0)));
             currentPage++;
         }
